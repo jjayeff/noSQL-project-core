@@ -5,12 +5,13 @@ import { types, years, groups } from '../../../data'
 class FormMovie extends React.Component {
     constructor(props) {
         super(props)
+        const { name,imdb,img,year,type } = props.data.data
         this.state = {
-            name: 'Iron Man 3 มหาประลัย คนเกราะเหล็ก 3',
-            imdb: '7.2',
-            img: 'https://www.movie2free.com/wp-content/uploads/thumb/ironman3-230x300.jpg',
-            year: '2018',
-            type: ["Action บู๊","Adventure ผจญภัย","Sci-Fi วิทยาศาสตร์"],
+            name,
+            imdb,
+            img,
+            year,
+            type,
             actors: [],
             actorName1: 'โรเบิร์ต ดาวนีย์ จูเนียร์',
             actorName2: 'กวินเน็ธ พัลโทรว์',
@@ -52,7 +53,7 @@ class FormMovie extends React.Component {
         if(this.state.type.length === 0) await this.setState({type: [...this.state.type, 'ไม่มีหมวดหมู่']})
         if (confirm('Are you sure ?!')) {
             Router.reload()
-            this.props.data.editMovie(this.props,this.state)
+            this.props.data.editMovie( this.props.data.data._id, this.state )
             Router.push('/')
         }
     }
@@ -139,7 +140,7 @@ class FormMovie extends React.Component {
                                 <input type="text" className="form-control" placeholder="อายุ" value={this.state.actorAge4} onChange={this.handleChange.bind(this, 'actorAge4')}/>
                             </div>
                         </div>
-                        <button type="submit" className="btn btn-success">Submit</button>
+                        <button type="submit" className="btn btn-success">แก้ไข</button>
                     </fieldset>
                 </form>
             </div>

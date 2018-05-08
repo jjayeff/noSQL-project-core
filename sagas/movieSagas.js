@@ -70,7 +70,7 @@ function* createMovie(action) {
 
 function* editMovie(action) {
   try {
-     const json = yield call(postJSON, `${API_SERVER}/api/movies/edit/${action.id}`, action.payload)
+    const json = yield call(postJSON, `${API_SERVER}/api/movies/edit/${action.id}`, action.payload)
      yield put({ 
        type: EDIT_MOVIE_SUCCESS, 
        payload: json 

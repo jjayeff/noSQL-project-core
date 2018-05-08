@@ -20,7 +20,11 @@ class TableMovie extends React.Component {
                         {data.actors.map(x => `${x.name} , `)}
                     </td> 
                     <td><span className='movie-imdb-star' />{data.imdb}</td>
-                    <td><button type="button" className="btn btn-warning">Edit</button></td>
+                    <td>
+                        <Link href={{ pathname: `/edit`, query: data }} replace>
+                            <button type="button" className="btn btn-warning">Edit</button>
+                        </Link>
+                    </td>
                     <td><button type="button" className="btn btn-danger" onClick={this.handleDelete.bind(this, data._id)}>Delete</button></td>
                 </tr>
         )

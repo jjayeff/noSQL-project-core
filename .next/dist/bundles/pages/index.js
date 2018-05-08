@@ -603,13 +603,21 @@ var TableMovie = function (_React$Component) {
                             }
                         },
                         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                            'button',
-                            { type: 'button', className: 'btn btn-warning', __source: {
+                            __WEBPACK_IMPORTED_MODULE_1_next_link___default.a,
+                            { href: { pathname: '/edit', query: data }, replace: true, __source: {
                                     fileName: _jsxFileName,
-                                    lineNumber: 23
+                                    lineNumber: 24
                                 }
                             },
-                            'Edit'
+                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                'button',
+                                { type: 'button', className: 'btn btn-warning', __source: {
+                                        fileName: _jsxFileName,
+                                        lineNumber: 25
+                                    }
+                                },
+                                'Edit'
+                            )
                         )
                     ),
                     __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
@@ -617,14 +625,14 @@ var TableMovie = function (_React$Component) {
                         {
                             __source: {
                                 fileName: _jsxFileName,
-                                lineNumber: 24
+                                lineNumber: 28
                             }
                         },
                         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                             'button',
                             { type: 'button', className: 'btn btn-danger', onClick: _this2.handleDelete.bind(_this2, data._id), __source: {
                                     fileName: _jsxFileName,
-                                    lineNumber: 24
+                                    lineNumber: 28
                                 }
                             },
                             'Delete'
@@ -640,42 +648,42 @@ var TableMovie = function (_React$Component) {
                 'div',
                 { className: 'col-lg-12', __source: {
                         fileName: _jsxFileName,
-                        lineNumber: 30
+                        lineNumber: 34
                     }
                 },
                 __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                     'div',
                     { className: 'bs-component', __source: {
                             fileName: _jsxFileName,
-                            lineNumber: 31
+                            lineNumber: 35
                         }
                     },
                     __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                         'table',
                         { className: 'table table-hover', __source: {
                                 fileName: _jsxFileName,
-                                lineNumber: 32
+                                lineNumber: 36
                             }
                         },
                         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                             'thead',
                             { align: 'center', __source: {
                                     fileName: _jsxFileName,
-                                    lineNumber: 33
+                                    lineNumber: 37
                                 }
                             },
                             __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                                 'tr',
                                 { className: 'table-success', __source: {
                                         fileName: _jsxFileName,
-                                        lineNumber: 34
+                                        lineNumber: 38
                                     }
                                 },
                                 __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                                     'th',
                                     { scope: 'col', __source: {
                                             fileName: _jsxFileName,
-                                            lineNumber: 35
+                                            lineNumber: 39
                                         }
                                     },
                                     'Image'
@@ -684,7 +692,7 @@ var TableMovie = function (_React$Component) {
                                     'th',
                                     { scope: 'col', __source: {
                                             fileName: _jsxFileName,
-                                            lineNumber: 36
+                                            lineNumber: 40
                                         }
                                     },
                                     'No'
@@ -693,7 +701,7 @@ var TableMovie = function (_React$Component) {
                                     'th',
                                     { scope: 'col', __source: {
                                             fileName: _jsxFileName,
-                                            lineNumber: 37
+                                            lineNumber: 41
                                         }
                                     },
                                     'Name'
@@ -702,7 +710,7 @@ var TableMovie = function (_React$Component) {
                                     'th',
                                     { scope: 'col', __source: {
                                             fileName: _jsxFileName,
-                                            lineNumber: 38
+                                            lineNumber: 42
                                         }
                                     },
                                     'Actor'
@@ -711,7 +719,7 @@ var TableMovie = function (_React$Component) {
                                     'th',
                                     { scope: 'col', __source: {
                                             fileName: _jsxFileName,
-                                            lineNumber: 39
+                                            lineNumber: 43
                                         }
                                     },
                                     'IMDB'
@@ -720,7 +728,7 @@ var TableMovie = function (_React$Component) {
                                     'th',
                                     { scope: 'col', __source: {
                                             fileName: _jsxFileName,
-                                            lineNumber: 40
+                                            lineNumber: 44
                                         }
                                     },
                                     'Edit'
@@ -729,7 +737,7 @@ var TableMovie = function (_React$Component) {
                                     'th',
                                     { scope: 'col', __source: {
                                             fileName: _jsxFileName,
-                                            lineNumber: 41
+                                            lineNumber: 45
                                         }
                                     },
                                     'Delete'
@@ -740,7 +748,7 @@ var TableMovie = function (_React$Component) {
                             'tbody',
                             { align: 'center', __source: {
                                     fileName: _jsxFileName,
-                                    lineNumber: 44
+                                    lineNumber: 48
                                 }
                             },
                             this.renderComponent(this.props.data.movies)

@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
-import { editMovie } from '../../../reduxModules/movie'
-import Add from './Add'
+import { editMovie, fetchMovie } from '../../../reduxModules/movie'
+import Edit from './Edit'
 
 const mapStateToProps = (state) => {
     return ({
@@ -14,7 +14,7 @@ class Index extends Component {
         return (
             <div className='container' style={{paddingTop:'80px'}}>
                 <div className='row'>
-                    <Add title={this.props.title} data={this.props}/>
+                    <Edit title={this.props.title} data={this.props}/>
                 </div>
             </div>
         )
